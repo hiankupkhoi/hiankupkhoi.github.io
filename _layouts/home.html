@@ -5,58 +5,61 @@ layout: default
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <h1>{{ page.title }}</h1>
-            <p class="hero-subtitle">{{ page.description }}</p>
-            {% if page.show_call_box %}
-            <div class="call-to-action">
-                <a href="{{ '/about/' | relative_url }}" class="btn btn-primary">Learn More</a>
-                <a href="{{ '/publications/' | relative_url }}" class="btn btn-secondary">View Publications</a>
+            <h1>Learn Data Analysis in Lao Language</h1>
+            <p class="hero-subtitle">Master statistics, Stata, and R through comprehensive guides and practical examples. A knowledge hub for researchers and students.</p>
+            <div class="hero-buttons">
+                <a href="{{ '/foundational-statistics/' | relative_url }}" class="btn btn-primary">Get Started</a>
+                <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More</a>
             </div>
-            {% endif %}
         </div>
-        {% if page.intro_image %}
         <div class="hero-image">
-            <img src="{{ page.intro_image | relative_url }}" alt="Hero illustration">
+            <img src="https://illustrations.popsy.co/blue/data-analysis.svg" alt="Data Analysis">
         </div>
-        {% endif %}
     </div>
 </section>
 
 <section class="featured-courses">
     <div class="container">
-        <h2>Our Courses</h2>
-        <p class="section-subtitle">Learn data analysis through comprehensive courses</p>
-        
+        <div class="section-header">
+            <h2>Our Courses & Resources</h2>
+            <p>Comprehensive learning materials for data analysis and research methodology</p>
+        </div>
         <div class="courses-grid">
             <div class="course-card">
+                <div class="course-icon">📊</div>
                 <h3><a href="{{ '/foundational-statistics/' | relative_url }}">Foundational Statistics</a></h3>
-                <p>Master the fundamentals of statistical analysis, hypothesis testing, and probability theory essential for research.</p>
-                <a href="{{ '/foundational-statistics/' | relative_url }}" class="read-more">Learn More →</a>
+                <p>Master probability, hypothesis testing, and statistical inference from the ground up.</p>
+                <a href="{{ '/foundational-statistics/' | relative_url }}" class="course-link">Explore Course →</a>
             </div>
             <div class="course-card">
+                <div class="course-icon">📈</div>
                 <h3><a href="{{ '/data-analysis-stata/' | relative_url }}">Data Analysis using Stata</a></h3>
-                <p>Learn to use Stata for data management, statistical analysis, and advanced econometric modeling.</p>
-                <a href="{{ '/data-analysis-stata/' | relative_url }}" class="read-more">Learn More →</a>
+                <p>Learn professional data manipulation, statistical analysis, and econometric modeling in Stata.</p>
+                <a href="{{ '/data-analysis-stata/' | relative_url }}" class="course-link">Explore Course →</a>
             </div>
             <div class="course-card">
+                <div class="course-icon">💻</div>
                 <h3><a href="{{ '/data-analysis-r/' | relative_url }}">Data Analysis using R</a></h3>
-                <p>Master R programming for statistical analysis, data visualization, and reproducible research.</p>
-                <a href="{{ '/data-analysis-r/' | relative_url }}" class="read-more">Learn More →</a>
+                <p>Master R programming for visualization, analysis, and reproducible research.</p>
+                <a href="{{ '/data-analysis-r/' | relative_url }}" class="course-link">Explore Course →</a>
             </div>
             <div class="course-card">
+                <div class="course-icon">📄</div>
                 <h3><a href="{{ '/publications/' | relative_url }}">Publications</a></h3>
-                <p>Access our research publications, working papers, and technical guides on data analysis.</p>
-                <a href="{{ '/publications/' | relative_url }}" class="read-more">Learn More →</a>
+                <p>Access research papers, working papers, and technical guides on data analysis.</p>
+                <a href="{{ '/publications/' | relative_url }}" class="course-link">View Publications →</a>
             </div>
             <div class="course-card">
-                <h3><a href="{{ '/activities/' | relative_url }}">Activities</a></h3>
-                <p>Join our seminars, workshops, and training sessions on data analysis and research methodology.</p>
-                <a href="{{ '/activities/' | relative_url }}" class="read-more">Learn More →</a>
+                <div class="course-icon">🎓</div>
+                <h3><a href="{{ '/activities/' | relative_url }}">Activities & Workshops</a></h3>
+                <p>Join seminars, training sessions, and hands-on workshops on research methodology.</p>
+                <a href="{{ '/activities/' | relative_url }}" class="course-link">See Activities →</a>
             </div>
             <div class="course-card">
-                <h3><a href="{{ '/about/' | relative_url }}">About</a></h3>
-                <p>Learn more about Hian Kup Khoi and our mission to make data analysis accessible in Lao language.</p>
-                <a href="{{ '/about/' | relative_url }}" class="read-more">Learn More →</a>
+                <div class="course-icon">ℹ️</div>
+                <h3><a href="{{ '/about/' | relative_url }}">About Us</a></h3>
+                <p>Learn about our mission to make quantitative research accessible in Lao language.</p>
+                <a href="{{ '/about/' | relative_url }}" class="course-link">Learn More →</a>
             </div>
         </div>
     </div>
@@ -64,19 +67,40 @@ layout: default
 
 <section class="features">
     <div class="container">
-        <h2>Why Choose Hian Kup Khoi</h2>
+        <div class="section-header">
+            <h2>Why Choose Hian Kup Khoi?</h2>
+            <p>We're committed to making data analysis education accessible and practical</p>
+        </div>
         <div class="features-grid">
             <div class="feature">
-                <h3>📚 Comprehensive Content</h3>
-                <p>In-depth tutorials and guides in Lao language for data analysis and research methodology.</p>
+                <div class="feature-icon">🌐</div>
+                <h3>In Lao Language</h3>
+                <p>All content is carefully crafted in Lao to make complex statistical concepts accessible to Lao-speaking researchers.</p>
             </div>
             <div class="feature">
-                <h3>💻 Practical Examples</h3>
-                <p>Real-world examples using Stata and R with reproducible code and datasets.</p>
+                <div class="feature-icon">🔬</div>
+                <h3>Research-Focused</h3>
+                <p>Designed specifically for academic and applied research needs in econometrics and data science.</p>
             </div>
             <div class="feature">
-                <h3>🎓 Research-Focused</h3>
-                <p>Designed for academic and applied research in econometrics and geospatial analysis.</p>
+                <div class="feature-icon">💡</div>
+                <h3>Practical Examples</h3>
+                <p>Real-world datasets, reproducible code, and step-by-step tutorials you can follow along.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Comprehensive</h3>
+                <p>From beginner fundamentals to advanced econometric techniques, we cover all levels.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>Up-to-Date</h3>
+                <p>Regular updates with latest tools, techniques, and best practices in data analysis.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <h3>Community</h3>
+                <p>Connect with other researchers and learners through our activities and workshops.</p>
             </div>
         </div>
     </div>

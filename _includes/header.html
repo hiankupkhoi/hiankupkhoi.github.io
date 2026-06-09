@@ -3,29 +3,38 @@
         <div class="container navbar-content">
             <div class="navbar-brand">
                 <a href="{{ '/' | relative_url }}" class="logo">
-                    <span>{{ site.title }}</span>
+                    <span class="logo-icon">📊</span>
+                    <span class="logo-text">{{ site.title }}</span>
                 </a>
             </div>
             
-            <button class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <ul class="nav-menu" id="navMenu">
-                {% for item in site.data.menu.main %}
-                <li class="nav-item">
-                    <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.name }}</a>
-                </li>
-                {% endfor %}
+                <li class="nav-item"><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{{ '/foundational-statistics/' | relative_url }}" class="nav-link">Statistics</a></li>
+                <li class="nav-item"><a href="{{ '/data-analysis-stata/' | relative_url }}" class="nav-link">Stata</a></li>
+                <li class="nav-item"><a href="{{ '/data-analysis-r/' | relative_url }}" class="nav-link">R</a></li>
+                <li class="nav-item"><a href="{{ '/publications/' | relative_url }}" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="{{ '/activities/' | relative_url }}" class="nav-link">Activities</a></li>
+                <li class="nav-item"><a href="{{ '/about/' | relative_url }}" class="nav-link">About</a></li>
             </ul>
         </div>
     </nav>
 </header>
-
 <script>
 document.getElementById('menuToggle').addEventListener('click', function() {
     document.getElementById('navMenu').classList.toggle('active');
+    this.classList.toggle('active');
+});
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('active');
+        document.getElementById('menuToggle').classList.remove('active');
+    });
 });
 </script>
