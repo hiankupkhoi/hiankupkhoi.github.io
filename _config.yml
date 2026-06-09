@@ -1,30 +1,15 @@
-title: "Hian Kup Khoi"
-description: "A knowledge hub for data analysis, econometrics, and research methodology in Lao language"
-url: "https://hiankupkhoi.github.io"
+title: Hian Kup Khoi
+description: Learn Data Analysis in Lao Language
 baseurl: ""
+url: "https://hiankupkhoi.github.io"
 
-permalink: pretty
+markdown: kramdown
+theme: minima
 
-home:
-  limit_courses: 6
-
-# Use native safe scss processing without breaking the compiler
-sass:
-  style: compressed
-
-# Only use standard plugins natively supported and safelisted by GitHub
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE.md
-  - LICENSE
-  - README.md
