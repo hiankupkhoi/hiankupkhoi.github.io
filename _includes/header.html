@@ -1,0 +1,7 @@
+<header>
+  <nav class="navbar">
+    {% for item in site.navigation %}
+      <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
