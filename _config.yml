@@ -8,11 +8,14 @@ permalink: pretty
 home:
   limit_courses: 6
 
+# Use native safe scss processing without breaking the compiler
 sass:
   style: compressed
 
+# Only use standard plugins natively supported and safelisted by GitHub
 plugins:
-  - jekyll-environment-variables
+  - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
