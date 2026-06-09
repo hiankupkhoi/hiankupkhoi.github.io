@@ -1,0 +1,30 @@
+title: Hian Kup Khoi
+description: Learn Data Analysis in Lao and English
+url: "https://hiankupkhoi.github.io"
+baseurl: ""
+
+theme: minima
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+navigation:
+  - name: Home
+    link: /
+  - name: Foundational Statistics
+    link: /statistics
+  - name: Data Analysis using Stata
+    link: /stata
+  - name: Data Analysis using R
+    link: /r
+  - name: Publications
+    link: /publications
+  - name: Activities
+    link: /activities
+  - name: About
+    link: /about
+  - name: Contact
+    link: /contact
