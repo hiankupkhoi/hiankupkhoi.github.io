@@ -5,6 +5,6 @@ title: Contact
 
 # Contact
 
-Email: your-email@example.com  
-Facebook: your-page  
+Email: email@example.com  
+Facebook: Facebook-page  
 Phone: +xxx-xxx-xxxx
