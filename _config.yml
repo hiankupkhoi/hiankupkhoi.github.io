@@ -1,39 +1,12 @@
 title: "Hian Kup Khoi"
-description: "Hian Kup Khoi the place of sharing data analysis in Lao language"
+description: "A knowledge hub for data analysis, econometrics, and research methodology in Lao language"
 url: "https://hiankupkhoi.github.io"
-baseurl: "hiankupkhoi.github.io"
+baseurl: ""
 
 permalink: pretty
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
-
 home:
-  limit_services: 6
-
-collections:
-  services:
-    output: true
-    sort_by: weight
-  team:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
+  limit_courses: 6
 
 sass:
   style: compressed
