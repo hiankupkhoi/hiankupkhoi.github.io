@@ -1,69 +1,83 @@
 ---
 layout: default
-bodyClass: "page-home"
 ---
 
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{ page.title }}</h1>
+            <p class="hero-subtitle">{{ page.description }}</p>
+            {% if page.show_call_box %}
+            <div class="call-to-action">
+                <a href="{{ '/about/' | relative_url }}" class="btn btn-primary">Learn More</a>
+                <a href="{{ '/publications/' | relative_url }}" class="btn btn-secondary">View Publications</a>
+            </div>
+            {% endif %}
+        </div>
+        {% if page.intro_image %}
+        <div class="hero-image">
+            <img src="{{ page.intro_image | relative_url }}" alt="Hero illustration">
+        </div>
         {% endif %}
-      </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
-      </div>
-      {% endif %}
     </div>
-  </div>
-</div>
+</section>
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.services limit: limit %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
-          </div>
+<section class="featured-courses">
+    <div class="container">
+        <h2>Our Courses</h2>
+        <p class="section-subtitle">Learn data analysis through comprehensive courses</p>
+        
+        <div class="courses-grid">
+            <div class="course-card">
+                <h3><a href="{{ '/foundational-statistics/' | relative_url }}">Foundational Statistics</a></h3>
+                <p>Master the fundamentals of statistical analysis, hypothesis testing, and probability theory essential for research.</p>
+                <a href="{{ '/foundational-statistics/' | relative_url }}" class="read-more">Learn More →</a>
+            </div>
+            <div class="course-card">
+                <h3><a href="{{ '/data-analysis-stata/' | relative_url }}">Data Analysis using Stata</a></h3>
+                <p>Learn to use Stata for data management, statistical analysis, and advanced econometric modeling.</p>
+                <a href="{{ '/data-analysis-stata/' | relative_url }}" class="read-more">Learn More →</a>
+            </div>
+            <div class="course-card">
+                <h3><a href="{{ '/data-analysis-r/' | relative_url }}">Data Analysis using R</a></h3>
+                <p>Master R programming for statistical analysis, data visualization, and reproducible research.</p>
+                <a href="{{ '/data-analysis-r/' | relative_url }}" class="read-more">Learn More →</a>
+            </div>
+            <div class="course-card">
+                <h3><a href="{{ '/publications/' | relative_url }}">Publications</a></h3>
+                <p>Access our research publications, working papers, and technical guides on data analysis.</p>
+                <a href="{{ '/publications/' | relative_url }}" class="read-more">Learn More →</a>
+            </div>
+            <div class="course-card">
+                <h3><a href="{{ '/activities/' | relative_url }}">Activities</a></h3>
+                <p>Join our seminars, workshops, and training sessions on data analysis and research methodology.</p>
+                <a href="{{ '/activities/' | relative_url }}" class="read-more">Learn More →</a>
+            </div>
+            <div class="course-card">
+                <h3><a href="{{ '/about/' | relative_url }}">About</a></h3>
+                <p>Learn more about Hian Kup Khoi and our mission to make data analysis accessible in Lao language.</p>
+                <a href="{{ '/about/' | relative_url }}" class="read-more">Learn More →</a>
+            </div>
         </div>
-      </div>
-      {% endfor %}
     </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 
-{% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
+<section class="features">
+    <div class="container">
+        <h2>Why Choose Hian Kup Khoi</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>📚 Comprehensive Content</h3>
+                <p>In-depth tutorials and guides in Lao language for data analysis and research methodology.</p>
+            </div>
+            <div class="feature">
+                <h3>💻 Practical Examples</h3>
+                <p>Real-world examples using Stata and R with reproducible code and datasets.</p>
+            </div>
+            <div class="feature">
+                <h3>🎓 Research-Focused</h3>
+                <p>Designed for academic and applied research in econometrics and geospatial analysis.</p>
+            </div>
         </div>
-      </div>
-      {% endfor %}
-
     </div>
-  </div>
-</div>
-{% endif %}
+</section>
