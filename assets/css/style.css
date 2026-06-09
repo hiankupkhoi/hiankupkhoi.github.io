@@ -1,24 +1,36 @@
 /* ===========================
+   GLOBAL COLORS (World Bank Inspired)
+   =========================== */
+:root {
+  --wb-green: #4CAF50;
+  --wb-green-dark: #43A047;
+  --wb-blue: #005EB8;
+  --wb-blue-light: #4DA3FF;
+  --wb-gray-bg: #F5F7FA;
+  --wb-gray-text: #1F2937;
+  --wb-gray-light: #E5E7EB;
+  --wb-white: #FFFFFF;
+}
+
+/* ===========================
    GLOBAL STYLES
    =========================== */
 body {
   font-family: "Inter", system-ui, sans-serif;
   margin: 0;
-  background: #F5F7FA;
-  color: #1F2937;
+  background: var(--wb-gray-bg);
+  color: var(--wb-gray-text);
   line-height: 1.7;
 }
 
-/* Container */
 .container {
   max-width: 960px;
   margin: auto;
   padding: 2rem 1rem;
 }
 
-/* Headings */
 h1, h2, h3 {
-  color: #1F2937;
+  color: var(--wb-gray-text);
   margin-top: 0;
   font-weight: 700;
 }
@@ -27,7 +39,7 @@ h1, h2, h3 {
    NAVIGATION BAR
    =========================== */
 .navbar {
-  background: #4CAF50;
+  background: var(--wb-blue);
   padding: 1rem 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -35,23 +47,21 @@ h1, h2, h3 {
 }
 
 .navbar a {
-  color: white;
+  color: var(--wb-white);
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
 }
 
 .navbar a:hover {
-  color: #E8F5E9;
-  text-decoration: underline;
+  color: var(--wb-blue-light);
 }
 
 /* ===========================
    HERO SECTION
    =========================== */
 .hero {
-  background: linear-gradient(135deg, #4CAF50, #43A047);
-  color: #F5F7FA;
+  background: linear-gradient(135deg, var(--wb-green), var(--wb-green-dark));
+  color: var(--wb-white);
   padding: 5rem 2rem;
   text-align: center;
   border-radius: 14px;
@@ -70,8 +80,8 @@ h1, h2, h3 {
 }
 
 .hero-btn {
-  background: white;
-  color: #43A047;
+  background: var(--wb-white);
+  color: var(--wb-green-dark);
   padding: 0.85rem 1.7rem;
   border-radius: 10px;
   font-weight: 600;
@@ -102,10 +112,6 @@ footer {
   .navbar {
     flex-direction: column;
     gap: 0.75rem;
-  }
-
-  .navbar a {
-    font-size: 1.1rem;
   }
 
   .hero {
