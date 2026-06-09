@@ -5,7 +5,7 @@ title: Home
 
 <!-- World Bank Style Hero Section -->
 <div class="wb-hero">
-  <img src="/assets/images/hero.jpg" alt="Data Analysis" class="wb-hero-img">
+  <img src="/assets/images/hero.svg" alt="Data Analysis" class="wb-hero-img">
   <div class="wb-hero-text">
     <h1>Learn Data Analysis in English & Lao</h1>
     <p>Master statistics, Stata, and R with clear explanations and practical examples.</p>
