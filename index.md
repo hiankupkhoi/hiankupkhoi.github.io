@@ -1,9 +1,13 @@
 ---
-title: Hian Kup Khoi
-layout: home
-description: A knowledge hub for data analysis, econometrics, and research methodology in Lao language.
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
-show_call_box: true
+layout: default
+title: Home
 ---
+
+# Learn Data Analysis in Lao Language
+
+Welcome to **Hian Kup Khoi** — a learning hub for statistics, Stata, and R.
+
+## Start Learning
+- [Statistics](statistics)
+- [Stata](stata)
+- [R](r)
