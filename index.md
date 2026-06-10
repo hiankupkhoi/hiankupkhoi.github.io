@@ -19,8 +19,13 @@ title: Home
 
 <!-- World Bank Style Cards Section -->
 <div class="wb-cards">
+
   <div class="wb-card">
     <img src="/assets/images/statistics.svg" alt="">
+    <div class="image-credit-small">
+      Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
+      from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+    </div>
     <h3>Foundational Statistics</h3>
     <p>Learn probability, hypothesis testing, and regression.</p>
     <a href="/statistics">Explore</a>
@@ -28,6 +33,10 @@ title: Home
 
   <div class="wb-card">
     <img src="/assets/images/stata.svg" alt="">
+    <div class="image-credit-small">
+      Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
+      from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+    </div>
     <h3>Data Analysis using Stata</h3>
     <p>Data cleaning, visualization, and econometrics.</p>
     <a href="/stata">Explore</a>
@@ -35,11 +44,17 @@ title: Home
 
   <div class="wb-card">
     <img src="/assets/images/r.svg" alt="">
+    <div class="image-credit-small">
+      Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
+      from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+    </div>
     <h3>Data Analysis using R</h3>
     <p>R programming for analysis and reproducible research.</p>
     <a href="/r">Explore</a>
   </div>
+
 </div>
+
 
 
 # Welcome to Hian Kup Khoi
