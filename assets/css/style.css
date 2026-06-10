@@ -256,25 +256,28 @@ footer {
   object-fit: cover;
 }
 
-/* Overlay credit inside the image */
+/* Overlay credit inside the image (dark text for light SVGs) */
 .image-credit-overlay {
   position: absolute;
   bottom: 6px;
   right: 8px;
-  font-size: 0.65rem;
-  color: #f0f0f0;
-  opacity: 0.9;
-  background: rgba(0, 0, 0, 0.25);
-  padding: 2px 6px;
+  font-size: 0.70rem;
+  color: #1F2937; /* dark gray, highly readable */
+  opacity: 0.95;
+  background: rgba(255, 255, 255, 0.75); /* soft white background */
+  padding: 3px 8px;
   border-radius: 4px;
+  backdrop-filter: blur(2px); /* modern, clean */
 }
 
 .image-credit-overlay a {
-  color: #e0e0e0;
+  color: #1F2937;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .image-credit-overlay a:hover {
   text-decoration: underline;
 }
+
 
