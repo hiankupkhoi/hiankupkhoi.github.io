@@ -16,21 +16,21 @@ title: Home
 <!-- World Bank Style Cards Section -->
 <div class="wb-cards">
   <div class="wb-card">
-    <img src="/assets/images/statistics.jpg" alt="">
+    <img src="/assets/images/statistics.svg" alt="">
     <h3>Foundational Statistics</h3>
     <p>Learn probability, hypothesis testing, and regression.</p>
     <a href="/statistics">Explore</a>
   </div>
 
   <div class="wb-card">
-    <img src="/assets/images/stata.jpg" alt="">
+    <img src="/assets/images/stata.svg" alt="">
     <h3>Data Analysis using Stata</h3>
     <p>Data cleaning, visualization, and econometrics.</p>
     <a href="/stata">Explore</a>
   </div>
 
   <div class="wb-card">
-    <img src="/assets/images/r.jpg" alt="">
+    <img src="/assets/images/r.svg" alt="">
     <h3>Data Analysis using R</h3>
     <p>R programming for analysis and reproducible research.</p>
     <a href="/r">Explore</a>
