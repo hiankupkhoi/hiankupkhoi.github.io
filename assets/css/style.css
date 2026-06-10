@@ -1,6 +1,6 @@
-/* ===========================
+/* =======================================================
    GLOBAL COLORS (World Bank Inspired)
-   =========================== */
+   ======================================================= */
 :root {
   --wb-green: #4CAF50;
   --wb-green-dark: #43A047;
@@ -12,9 +12,9 @@
   --wb-white: #FFFFFF;
 }
 
-/* ===========================
+/* =======================================================
    GLOBAL STYLES
-   =========================== */
+   ======================================================= */
 body {
   font-family: "Inter", system-ui, sans-serif;
   margin: 0;
@@ -35,9 +35,9 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* ===========================
+/* =======================================================
    NAVIGATION BAR
-   =========================== */
+   ======================================================= */
 .navbar {
   background: var(--wb-blue);
   padding: 1rem 2rem;
@@ -56,9 +56,9 @@ h1, h2, h3 {
   color: var(--wb-blue-light);
 }
 
-/* ===========================
-   HERO SECTION
-   =========================== */
+/* =======================================================
+   HERO SECTION (Legacy Base Config)
+   ======================================================= */
 .hero {
   background: linear-gradient(135deg, var(--wb-green), var(--wb-green-dark));
   color: var(--wb-white);
@@ -94,39 +94,9 @@ h1, h2, h3 {
   background: #E8F5E9;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #4B5563;
-  margin-top: 3rem;
-  font-size: 0.95rem;
-}
-
-/* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .hero {
-    padding: 3rem 1.5rem;
-  }
-
-  .hero h1 {
-    font-size: 2.1rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-}
-/* World Bank style hero */
+/* =======================================================
+   WORLD BANK STYLE HERO (Desktop Configurations)
+   ======================================================= */
 .wb-hero {
   position: relative;
   width: 100%;
@@ -161,7 +131,10 @@ footer {
   margin-bottom: 1.5rem;
   color: #E8F5E9;
 }
-/* World Bank style cards */
+
+/* =======================================================
+   WORLD BANK STYLE CARDS (Desktop Layout Grid)
+   ======================================================= */
 .wb-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -208,6 +181,25 @@ footer {
 .wb-card a:hover {
   text-decoration: underline;
 }
+
+/* Wrapper for card images */
+.wb-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* SVG image styling inside wrappers */
+.wb-card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =======================================================
+   IMAGE CREDITS SETUP
+   ======================================================= */
 .image-credit {
   position: absolute;
   bottom: 10px;
@@ -225,6 +217,7 @@ footer {
 .image-credit a:hover {
   text-decoration: underline;
 }
+
 /* Small image credits for cards */
 .image-credit-small {
   font-size: 0.7rem;
@@ -241,34 +234,16 @@ footer {
 .image-credit-small a:hover {
   text-decoration: underline;
 }
-/* Wrapper for card images */
-.wb-card-img-wrapper {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
 
-/* SVG image styling */
-.wb-card-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* =======================================================
-   CLEAN OVERLAY CREDIT (Completely Borderless & Flat Text)
-   ======================================================= */
-
+/* Clean borderless over-image styling */
 .image-credit-overlay {
   position: absolute;
   bottom: 6px;
   right: 8px;
   font-size: 0.65rem;
-  color: var(--wb-gray-text) !important; /* Uses your uniform dark gray */
+  color: var(--wb-gray-text) !important;
   z-index: 10;
   
-  /* Hard reset on all structural backgrounds, shapes, and filters */
   background: transparent !important;
   background-color: transparent !important;
   padding: 0 !important;
@@ -279,18 +254,14 @@ footer {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 
-  /* Text stroke/shadow for readability directly on top of images */
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9), 
               -1px -1px 1px rgba(255, 255, 255, 0.9); 
 }
 
-/* Links style reset (Forces "Jan" and "Pixabay" to strip all padding) */
 .image-credit-overlay a {
   color: var(--wb-blue) !important; 
   text-decoration: none;
   font-weight: 600;
-  
-  /* Strips any inner box properties on the link tags */
   padding: 0 !important;
   margin: 0 !important;
   background: transparent !important;
@@ -302,3 +273,91 @@ footer {
   text-decoration: underline;
 }
 
+/* =======================================================
+   FOOTER STYLE
+   ======================================================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #4B5563;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* =======================================================
+   MODERN RESPONSIVE SYSTEM (Media Queries)
+   ======================================================= */
+
+/* Tablet Optimization (Screens smaller than 992px) */
+@media (max-width: 992px) {
+  .wb-hero {
+    height: 360px;
+  }
+  .wb-hero-text h1 {
+    font-size: 2.3rem;
+  }
+}
+
+/* Mobile Phone Optimization (Screens smaller than 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Support legacy .hero rules if structural layouts are reused */
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  /* World Bank Fluid Hero for Mobile Views */
+  .wb-hero {
+    height: auto;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  /* Drop graphic opacity so dark text overlays remain cleanly visible */
+  .wb-hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+  }
+
+  .wb-hero-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .wb-hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .wb-hero-text p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Compact Card Layout Grid adjustments */
+  .wb-cards {
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
