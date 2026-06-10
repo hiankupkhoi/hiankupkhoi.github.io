@@ -21,10 +21,12 @@ title: Home
 <div class="wb-cards">
 
   <div class="wb-card">
-    <img src="/assets/images/statistics.svg" alt="">
-    <div class="image-credit-overlay">
-      Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
-      from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+    <div class="wb-card-img-wrapper">
+      <img src="/assets/images/statistics.svg" alt="">
+      <div class="image-credit-overlay">
+        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
+        from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+      </div>
     </div>
     <h3>Foundational Statistics</h3>
     <p>Learn probability, hypothesis testing, and regression.</p>
@@ -32,10 +34,12 @@ title: Home
   </div>
 
   <div class="wb-card">
-    <img src="/assets/images/stata.svg" alt="">
-    <div class="image-credit-overlay">
-      Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
-      from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+    <div class="wb-card-img-wrapper">
+      <img src="/assets/images/stata.svg" alt="">
+      <div class="image-credit-overlay">
+        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
+        from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+      </div>
     </div>
     <h3>Data Analysis using Stata</h3>
     <p>Data cleaning, visualization, and econometrics.</p>
@@ -43,10 +47,12 @@ title: Home
   </div>
 
   <div class="wb-card">
-    <img src="/assets/images/r.svg" alt="">
-    <div class="image-credit-overlay">
-      Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
-      from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+    <div class="wb-card-img-wrapper">
+      <img src="/assets/images/r.svg" alt="">
+      <div class="image-credit-overlay">
+        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
+        from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+      </div>
     </div>
     <h3>Data Analysis using R</h3>
     <p>R programming for analysis and reproducible research.</p>
@@ -54,6 +60,7 @@ title: Home
   </div>
 
 </div>
+
 
 
 
