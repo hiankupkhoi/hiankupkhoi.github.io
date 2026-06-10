@@ -11,6 +11,10 @@ title: Home
     <p>Master statistics, Stata, and R with clear explanations and practical examples.</p>
     <a class="hero-btn" href="/statistics">Start Learning</a>
   </div>
+    <div class="image-credit">
+    Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a> 
+    from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+  </div>
 </div>
 
 <!-- World Bank Style Cards Section -->
@@ -36,14 +40,7 @@ title: Home
     <a href="/r">Explore</a>
   </div>
 </div>
-<div class="wb-hero">
-  <img src="/assets/images/hero.jpg" alt="Data Analysis" class="wb-hero-img">
-  <div class="wb-hero-text">
-    <h1>Learn Data Analysis in English & Lao</h1>
-    <p>Master statistics, Stata, and R with clear explanations and practical examples.</p>
-    <a class="hero-btn" href="/statistics">Start Learning</a>
-  </div>
-</div>
+
 
 # Welcome to Hian Kup Khoi
 
