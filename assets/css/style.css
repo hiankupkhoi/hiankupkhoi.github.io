@@ -256,29 +256,31 @@ footer {
   object-fit: cover;
 }
 
-/* Overlay credit inside the image (dark text for light SVGs) */
+/* Overlay credit inside the image (Slimmed down and forced high-contrast) */
 .image-credit-overlay {
   position: absolute;
   bottom: 6px;
-  right: 8px;
-  font-size: 0.70rem;
-  color: var(--wb-gray-text); /* Uses your global dark gray (#1F2937) */
-  opacity: 0.95;
-  background: rgba(255, 255, 255, 0.85); /* Slightly bumped up contrast */
-  padding: 3px 8px;
-  border-radius: 4px;
+  right: 6px;
+  font-size: 0.65rem; /* Slightly smaller text for better card proportions */
+  color: #1F2937 !important; /* Forces plain text to stay dark gray */
+  background: rgba(255, 255, 255, 0.90); /* Increased opacity to hide bright image spots underneath */
+  padding: 2px 6px; /* Reduced padding to make the box tighter and less bulky */
+  border-radius: 3px;
   backdrop-filter: blur(2px);
+  pointer-events: auto;
+  z-index: 10;
 }
 
-/* FIX: Change link color from bright white/gray to a dark readable color */
+/* FIX: Forces "Jan" and "Pixabay" links to be dark and highly visible */
 .image-credit-overlay a {
-  color: var(--wb-blue); /* Looks professional and stands out clearly */
+  color: var(--wb-blue) !important; /* Changes the link to your World Bank Blue */
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
 }
 
 .image-credit-overlay a:hover {
-  color: var(--wb-gray-text); /* Shifts color on hover */
+  color: var(--wb-gray-text) !important; /* Turns dark gray when hovered */
   text-decoration: underline;
 }
 
