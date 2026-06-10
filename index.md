@@ -3,29 +3,27 @@ layout: default
 title: Home
 ---
 
-<!-- World Bank Style Hero Section -->
 <div class="wb-hero">
-  <img src="/assets/images/hero.svg" alt="Data Analysis" class="wb-hero-img">
+  <img src="/assets/images/hero.svg" alt="Data Analysis Chart Illustration" class="wb-hero-img">
   <div class="wb-hero-text">
     <h1>Learn Data Analysis in English & Lao</h1>
     <p>Master statistics, Stata, and R with clear explanations and practical examples.</p>
     <a class="hero-btn" href="/statistics">Start Learning</a>
   </div>
-    <div class="image-credit">
-    Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a> 
-    from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+  <div class="image-credit">
+    Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Jan</a> 
+    from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Pixabay</a>
   </div>
 </div>
 
-<!-- World Bank Style Cards Section -->
 <div class="wb-cards">
 
   <div class="wb-card">
     <div class="wb-card-img-wrapper">
-      <img src="/assets/images/statistics.svg" alt="">
+      <img src="/assets/images/statistics.svg" alt="Statistical Distribution Graphs">
       <div class="image-credit-overlay">
-        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
-        from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Jan</a>
+        from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Pixabay</a>
       </div>
     </div>
     <h3>Foundational Statistics</h3>
@@ -35,10 +33,10 @@ title: Home
 
   <div class="wb-card">
     <div class="wb-card-img-wrapper">
-      <img src="/assets/images/stata.svg" alt="">
+      <img src="/assets/images/stata.svg" alt="Stata Data Workspace Illustration">
       <div class="image-credit-overlay">
-        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
-        from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Jan</a>
+        from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Pixabay</a>
       </div>
     </div>
     <h3>Data Analysis using Stata</h3>
@@ -48,10 +46,10 @@ title: Home
 
   <div class="wb-card">
     <div class="wb-card-img-wrapper">
-      <img src="/assets/images/r.svg" alt="">
+      <img src="/assets/images/r.svg" alt="R Programming Environment Setup">
       <div class="image-credit-overlay">
-        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
-        from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
+        Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Jan</a>
+        from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771" target="_blank" rel="noopener">Pixabay</a>
       </div>
     </div>
     <h3>Data Analysis using R</h3>
@@ -61,9 +59,7 @@ title: Home
 
 </div>
 
-
-
-
-# Welcome to Hian Kup Khoi
-
-Explore high‑quality learning materials designed for students, researchers, and data analysts.
+<div class="welcome-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--wb-gray-light);">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem;">Welcome to Hian Kup Khoi</h2>
+  <p>Explore high‑quality learning materials designed for students, researchers, and data analysts.</p>
+</div>
