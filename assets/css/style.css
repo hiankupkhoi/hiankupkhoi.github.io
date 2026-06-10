@@ -262,21 +262,23 @@ footer {
   bottom: 6px;
   right: 8px;
   font-size: 0.70rem;
-  color: #1F2937; /* dark gray, highly readable */
+  color: var(--wb-gray-text); /* Uses your global dark gray (#1F2937) */
   opacity: 0.95;
-  background: rgba(255, 255, 255, 0.75); /* soft white background */
+  background: rgba(255, 255, 255, 0.85); /* Slightly bumped up contrast */
   padding: 3px 8px;
   border-radius: 4px;
-  backdrop-filter: blur(2px); /* modern, clean */
+  backdrop-filter: blur(2px);
 }
 
+/* FIX: Change link color from bright white/gray to a dark readable color */
 .image-credit-overlay a {
-  color: #e0e0e0;
+  color: var(--wb-blue); /* Looks professional and stands out clearly */
   text-decoration: none;
   font-weight: 600;
 }
 
 .image-credit-overlay a:hover {
+  color: var(--wb-gray-text); /* Shifts color on hover */
   text-decoration: underline;
 }
 
