@@ -225,3 +225,19 @@ footer {
 .image-credit a:hover {
   text-decoration: underline;
 }
+/* Small image credits for cards */
+.image-credit-small {
+  font-size: 0.7rem;
+  color: #6B7280;
+  margin: 0.3rem 1rem 0.5rem;
+  opacity: 0.85;
+}
+
+.image-credit-small a {
+  color: #4B5563;
+  text-decoration: none;
+}
+
+.image-credit-small a:hover {
+  text-decoration: underline;
+}
