@@ -22,7 +22,7 @@ title: Home
 
   <div class="wb-card">
     <img src="/assets/images/statistics.svg" alt="">
-    <div class="image-credit-small">
+    <div class="image-credit-overlay">
       Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
       from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
     </div>
@@ -33,7 +33,7 @@ title: Home
 
   <div class="wb-card">
     <img src="/assets/images/stata.svg" alt="">
-    <div class="image-credit-small">
+    <div class="image-credit-overlay">
       Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
       from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
     </div>
@@ -44,7 +44,7 @@ title: Home
 
   <div class="wb-card">
     <img src="/assets/images/r.svg" alt="">
-    <div class="image-credit-small">
+    <div class="image-credit-overlay">
       Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Jan</a>
       from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3614771">Pixabay</a>
     </div>
