@@ -208,3 +208,20 @@ footer {
 .wb-card a:hover {
   text-decoration: underline;
 }
+.image-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 0.75rem;
+  color: #f0f0f0;
+  opacity: 0.85;
+}
+
+.image-credit a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  text-decoration: underline;
+}
